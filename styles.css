@@ -4,13 +4,156 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Karla", sans-serif, serif;
 }
 
 :root {
   --Teal500: hsl(179, 62%, 43%);
+  --Teal200: hsl(179, 57%, 55%);
+  --TealShadow: hsl(179, 41%, 39%);
+  --TealLight: hsl(179, 55%, 70%);
+  --TealLighter: hsl(179, 100%, 85%);
   --Teal100: hsl(204, 43%, 93%);
+  --CardShadow: hsl(204, 19%, 85%);
   --Green400: hsl(71, 73%, 54%);
+  --GreenClicked: hsl(71, 59%, 41%);
   --Gray500: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
 }
 
 /* || Main Styling */
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Teal100);
+}
+
+.card {
+  width: 22em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: 1em 1em 1em var(--CardShadow);
+}
+
+.join-header,
+.subscribe-header,
+.why-header {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.join-section,
+.subscribe-section,
+.why-section {
+  padding: 2em;
+}
+
+/* Join Section */
+
+.join-section {
+  background-color: var(--white);
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+.join-header {
+  color: var(--Teal500);
+  margin-bottom: 1em;
+}
+
+.join-sub-header {
+  color: var(--Green400);
+  font-weight: bold;
+  line-height: 150%;
+  margin-bottom: 1em;
+}
+
+.join-text {
+  color: var(--Gray500);
+  line-height: 150%;
+}
+
+/* Subscribe Section */
+
+.subscribe-section {
+  background-color: var(--Teal500);
+}
+
+.subscribe-header {
+  color: var(--white);
+  margin-bottom: 1em;
+}
+
+.price-value {
+  color: var(--white);
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-right: 0.4em;
+}
+
+.price {
+  display: flex;
+  color: var(--TealLight);
+  align-items: center;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+.subscribe-text {
+  color: var(--TealLighter);
+  font-size: 1.1em;
+  margin-bottom: 1.5em;
+}
+
+button {
+  width: 100%;
+  padding: 1.2em 0;
+  background-color: var(--Green400);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0.5em 0.5em 1em var(--TealShadow);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  background-color: var(--GreenClicked);
+}
+
+/* Why Section */
+
+.why-section {
+  background-color: var(--Teal200);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+.why-header {
+  color: var(--white);
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  color: var(--TealLighter);
+  margin-bottom: 0.3em;
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
