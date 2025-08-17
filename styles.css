@@ -1,0 +1,16 @@
+/* || Universal Styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Teal500: hsl(179, 62%, 43%);
+  --Teal100: hsl(204, 43%, 93%);
+  --Green400: hsl(71, 73%, 54%);
+  --Gray500: hsl(218, 22%, 67%);
+}
+
+/* || Main Styling */
