@@ -52,4 +52,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@jonmc89](https://www.frontendmentor.io/jonmc89)
+- Frontend Mentor - [@jonmc89](https://www.frontendmentor.io/profile/jonmc89)
