@@ -64,6 +64,7 @@ main {
 .join-header {
   color: var(--Teal500);
   margin-bottom: 1em;
+  font-size: clamp(1em, 2.5vw, 1.5em);
 }
 
 .join-sub-header {
@@ -71,11 +72,13 @@ main {
   font-weight: bold;
   line-height: 150%;
   margin-bottom: 1em;
+  font-size: clamp(1em, 2.5vw, 1.3em);
 }
 
 .join-text {
   color: var(--Gray500);
   line-height: 150%;
+  font-size: clamp(1em, 2vw, 1.3em);
 }
 
 /* Subscribe Section */
@@ -157,3 +160,41 @@ li {
 li:last-of-type {
   margin-bottom: 0;
 }
+
+/* ... */
+
+/* || Tablet View */
+
+@media screen and (min-width: 51.25em) {
+  .card {
+    width: 40em;
+  }
+}
+
+/* ... */
+
+/* || Dekstop View */
+
+@media screen and (min-width: 90em) {
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 50em;
+    border-radius: 0.5em;
+  }
+
+  .join-section {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .subscribe-section {
+    border-bottom-left-radius: 0.5em;
+  }
+
+  .why-section {
+    border-bottom-left-radius: 0;
+  }
+}
+
+/* ... */
